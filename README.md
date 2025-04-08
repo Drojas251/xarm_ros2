@@ -3,18 +3,18 @@ This repo setups an environment for running xarm_ros2 on a ubuntu 20.04 machine.
 
 ## Docker Installation
 
-First, install docker for your platform. Docker installation instructions for ubuntu can be found [here](https://docs.docker.com/engine/install/ubuntu/).
+Helper scripts for installing docker on ubuntu and mac are in the Docker/docker_install folder.
 
-After installing docker, run the following command to run docker without sudo:
+For ubuntu, run the following script:
 
 ```bash
-sudo usermod -aG docker $USER
+./Docker/docker_install/docker_install_ubuntu.sh
 ```
 
-Then, run the following command to restart your terminal:
+For mac, run the following script:
 
 ```bash
-newgrp docker
+./Docker/docker_install/docker_install_mac.sh
 ```
 
 Docker should now be setup. Run the following command to test it:
